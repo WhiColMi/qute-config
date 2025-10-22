@@ -16,11 +16,14 @@ config.unbind('K')
 config.unbind('<Ctrl+PgUp>')
 config.unbind('J')
 config.unbind('<Ctrl+PgDown>')
+config.unbind('<Ctrl+d>')
 
 config.bind('J', 'tab-prev')
 config.bind('<Ctrl+PgDown>', 'tab-prev')
 config.bind('K', 'tab-next')
 config.bind('<Ctrl+PgUp>', 'tab-next')
+
+config.bind('<Ctrl-d>', 'tab-clone')  # Example: Ctrl+d duplicates tab
 
 """
 c.qt.args = [
