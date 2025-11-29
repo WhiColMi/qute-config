@@ -1,0 +1,76 @@
+from theme import COLORS
+
+def apply_theme(c):
+    c.colors.completion.category.bg = COLORS["bg_alt"]
+    c.colors.completion.category.fg = COLORS["fg"]
+    c.colors.completion.even.bg = COLORS["bg"]
+    c.colors.completion.odd.bg = COLORS["bg_alt"]
+    c.colors.completion.item.selected.bg = COLORS["accent"]
+    c.colors.completion.item.selected.fg = COLORS["bg"]
+    c.colors.completion.item.selected.border.top = COLORS["border"]
+    c.colors.completion.item.selected.border.bottom = COLORS["border"]
+    c.colors.completion.match.fg = COLORS["yellow"]
+    c.colors.completion.scrollbar.bg = COLORS["bg"]
+    c.colors.completion.scrollbar.fg = COLORS["fg"]
+
+    c.colors.statusbar.normal.bg = COLORS["bg"]
+    c.colors.statusbar.normal.fg = COLORS["fg"]
+    c.colors.statusbar.insert.bg = COLORS["green"]
+    c.colors.statusbar.insert.fg = COLORS["bg"]
+    c.colors.statusbar.passthrough.bg = COLORS["blue"]
+    c.colors.statusbar.passthrough.fg = COLORS["bg"]
+    c.colors.statusbar.private.bg = COLORS["purple"]
+    c.colors.statusbar.private.fg = COLORS["fg"]
+    c.colors.statusbar.command.bg = COLORS["bg_alt"]
+    c.colors.statusbar.command.fg = COLORS["fg"]
+    c.colors.statusbar.url.fg = COLORS["fg"]
+    c.colors.statusbar.url.success.http.fg = COLORS["green"]
+    c.colors.statusbar.url.success.https.fg = COLORS["green"]
+    c.colors.statusbar.url.warn.fg = COLORS["yellow"]
+    c.colors.statusbar.url.error.fg = COLORS["red"]
+
+    c.colors.contextmenu.menu.bg = COLORS["bg"]
+    c.colors.contextmenu.menu.fg = COLORS["fg"]
+    c.colors.contextmenu.selected.bg = COLORS["accent"]
+    c.colors.contextmenu.selected.fg = COLORS["dark"]
+    c.colors.contextmenu.disabled.fg = COLORS["text_secondary"]
+
+    c.colors.tabs.bar.bg = COLORS["bg"]
+    c.colors.tabs.even.bg = COLORS["bg"]
+    c.colors.tabs.even.fg = COLORS["text_secondary"]
+    c.colors.tabs.odd.bg = COLORS["bg_alt"]
+    c.colors.tabs.odd.fg = COLORS["text_secondary"]
+    c.colors.tabs.selected.even.bg = COLORS["accent"]
+    c.colors.tabs.selected.even.fg = COLORS["bg"]
+    c.colors.tabs.selected.odd.bg = COLORS["accent"]
+    c.colors.tabs.selected.odd.fg = COLORS["bg"]
+
+    c.colors.downloads.bar.bg = COLORS["bg"]
+    c.colors.downloads.start.bg = COLORS["blue"]
+    c.colors.downloads.start.fg = COLORS["bg"]
+    c.colors.downloads.stop.bg = COLORS["green"]
+    c.colors.downloads.stop.fg = COLORS["bg"]
+    c.colors.downloads.error.bg = COLORS["red"]
+    c.colors.downloads.error.fg = COLORS["fg"]
+
+    c.colors.messages.error.bg = COLORS["red"]
+    c.colors.messages.error.fg = COLORS["fg"]
+    c.colors.messages.warning.bg = COLORS["yellow"]
+    c.colors.messages.warning.fg = COLORS["dark"]
+    c.colors.messages.info.bg = COLORS["bg"]
+    c.colors.messages.info.fg = COLORS["fg"]
+
+    c.colors.prompts.bg = COLORS["bg_alt"]
+    c.colors.prompts.fg = COLORS["fg"]
+    c.colors.prompts.border = f'1px solid {COLORS["border"]}'
+
+    c.colors.hints.bg = COLORS["yellow"]
+    c.colors.hints.fg = COLORS["dark"]
+    c.colors.hints.match.fg = COLORS["red"]
+
+    c.colors.keyhint.bg = COLORS["bg"]
+    c.colors.keyhint.fg = COLORS["fg"]
+    c.colors.keyhint.suffix.fg = COLORS["yellow"]
+
+    c.colors.webpage.bg = COLORS["bg"]
+

@@ -1,7 +1,14 @@
 config.load_autoconfig()
 
+import sys
 import os
-exec(open(os.path.expanduser("~/.config/qutebrowser/theme-config.py")).read())
+
+mod = os.path.expanduser("~/.config/qutebrowser/modules")
+if mod not in sys.path:
+    sys.path.append(mod)
+
+import theme_config
+theme_config.apply_theme(c)
 
 c.auto_save.session=True
 c.colors.webpage.darkmode.enabled=True
@@ -10,7 +17,7 @@ c.colors.webpage.preferred_color_scheme="dark"
 c.tabs.last_close='close'
 c.tabs.indicator.width=0
 
-config.set('content.user_stylesheets', 'greasemonkey/transparent-bg.user.css')
+# config.set('content.user_stylesheets', 'greasemonkey/transparent-bg.user.css')
 
 config.unbind('K')
 config.unbind('<Ctrl+PgUp>')
@@ -38,6 +45,7 @@ c.qt.args = [
     'enable-accelerated-2d-canvas'
 ]
 """
+
 c.qt.args = [
     'enable-features=VaapiVideoDecoder,VaapiVideoEncoder'
     'enable-native-gpu-memory-buffers'
