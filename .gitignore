@@ -16,3 +16,7 @@ src/
 bookmarks/
 qsettings/
 quickmarks
+
+__pycache__/
+*.pyc
+*.pyo
